@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+langgraph
+langchain-openai
+openai
+python-dotenv
+pydantic
+pydantic-settings
+pandas
+azure-ai-contentsafety
+azure-core
+azure-identity

@@ -1,0 +1,34 @@
+# Secrets
+.env
+*.env
+kaggle.json
+.kaggle/
+
+# Azure/local deployment artifacts
+*.zip
+deploy_app/
+deploy_app_posix.zip
+cloud_data/
+.python_packages/
+output.tar.zst
+__oryx_packages__/
+oryx-manifest.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+reports/
+logs/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
