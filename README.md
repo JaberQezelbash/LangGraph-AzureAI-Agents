@@ -20,7 +20,7 @@ A nice user interface is yet to be bulit for it!
 
 ## What I Built
 
-This project is a small but complete **cloud-deployed clinical patient-engagement agent API**.
+This project is a small but complete **cloud-deployed clinical patient-engagement muilti-agent API**.
 
 It demonstrates:
 
