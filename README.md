@@ -15,7 +15,7 @@
 
 This repository contains an end-to-end AI-agent backend project that receives patient-style messages, classifies the message, routes it through a LangGraph workflow, calls mock clinical tools, applies safety checks, and returns a structured response through a FastAPI API deployed on Azure App Service.
 
-> **Disclaimer:** This project is only for experimentation and portfolio demonstration. It uses synthetic clinical data. It is not intended for real patient care or decision support.
+> ⚠️ Disclaimer: This project is only for experimentation and portfolio demonstration. It is not intended for real patient care or decision support.
 
 
 
