@@ -4,16 +4,13 @@
 
 
 
-
 <!-- Optional: add a banner/diagram here -->
 <!-- 
 <img width="900" alt="banner" src="https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/assets/banner.png">
 <img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/RAG-finetune-Llama-3.1-8B-Instruct/blob/main/assets/model.svg">
 -->
 
-<img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/RAG-finetune-Llama-3.1-8B-Instruct/blob/main/assets/model.png">
-
-
+<img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/LangGraph-AzureAI-Agents/blob/main/assets/model.png">
 
 
 This repository contains an end-to-end AI-agent backend project that receives patient-style messages, classifies the message, routes it through a LangGraph workflow, calls mock clinical tools, applies safety checks, and returns a structured response through a FastAPI API deployed on Azure App Service.
