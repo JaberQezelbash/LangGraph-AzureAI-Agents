@@ -2,9 +2,23 @@
 
 **Clinical Patient-Engagement Multi-Agent System with LangGraph + Azure AI**
 
+
+
+
+<!-- Optional: add a banner/diagram here -->
+<!-- 
+<img width="900" alt="banner" src="https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/assets/banner.png">
+<img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/RAG-finetune-Llama-3.1-8B-Instruct/blob/main/assets/model.svg">
+-->
+
+<img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/RAG-finetune-Llama-3.1-8B-Instruct/blob/main/assets/model.png">
+
+
+
+
 This repository contains an end-to-end AI-agent backend project that receives patient-style messages, classifies the message, routes it through a LangGraph workflow, calls mock clinical tools, applies safety checks, and returns a structured response through a FastAPI API deployed on Azure App Service.
 
-> **Disclaimer:** This project is for education, experimentation, and portfolio demonstration only. It uses mock/synthetic clinical data. It is not a medical device, not clinical decision support, and not intended for real patient care.
+> **Disclaimer:** This project is only for experimentation and portfolio demonstration. It uses synthetic clinical data. It is not intended for real patient care or decision support.
 
 
 
@@ -124,21 +138,6 @@ Original datasets are available here. The project expects dataset categories suc
 
 ## Example API Calls
 
-### Appointment request
-
-```powershell
-$body = @{
-  patient_id = "P0000001"
-  user_message = "I need to schedule a cardiology appointment next week."
-} | ConvertTo-Json
-
-Invoke-RestMethod `
-  -Uri "https://<your-app-hostname>/run" `
-  -Method Post `
-  -ContentType "application/json" `
-  -Body $body
-```
-
 ### Emergency-style request
 
 ```powershell
@@ -166,4 +165,4 @@ urgency = emergency
 
 ## Author’s Note
 
-This project was built as a practical end-to-end deployment, not only as a notebook. The main value is the full path from local Python code to LangGraph orchestration to Azure App Service deployment and a live API demo.
+This project is a practical, end-to-end demonstration of a cloud-deployed multi-agent clinical AI system. It uses LangGraph to orchestrate multiple agent responsibilities, including message triage, workflow routing, mock EHR/context lookup, safety checks, and response generation, while Azure App Service provides the deployment layer for a live FastAPI-based API demo. I developed a real deployable AI-agent product: from local Python development, to LangGraph workflow design, to Azure deployment, to a public Swagger API interface that can be tested in production-like conditions.
