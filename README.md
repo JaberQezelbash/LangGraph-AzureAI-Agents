@@ -13,7 +13,7 @@ This repository contains an end-to-end AI-agent backend project that receives pa
 After deployment, the API exposes a Swagger/OpenAPI browser UI:
 
 ```text
-https://app-clinical-langgraph-jaber-5271-afbpbchvfzh5h7ef.eastus2-01.azurewebsites.net/docs#/default/health_check_health_get
+https://app-clinical-langgraph-jaber-5271-afbpbchvfzh5h7ef.eastus2-01.azurewebsites.net/docs
 ```
 
 
