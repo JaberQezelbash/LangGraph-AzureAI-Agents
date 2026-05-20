@@ -105,69 +105,19 @@ It demonstrates:
 
 The repository is organized in the same portfolio style as my other project repositories: the main source files are under `codes/`, visual and technical explanations are under `assets/`, and the root README provides the high-level story.
 
----
 
-## Architecture
 
-```text
-Patient message
-   ↓
-FastAPI /run endpoint
-   ↓
-LangGraph state object
-   ↓
-input_safety_node
-   ↓
-triage_node
-   ↓
-ehr_lookup_node
-   ↓
-route_decision_node
-   ↓
-appointment_agent / clinical_info_agent / emergency_escalation_agent / human_review_agent
-   ↓
-response_node
-   ↓
-output_safety_node
-   ↓
-JSON response
-```
-
-The workflow is implemented in:
-
-```text
-codes/src/clinical_agent/agent/graph.py
-```
-
----
 
 ## Dataset Design
 
-Original datasets should be uploaded to:
+Original datasets are available here. The project expects dataset categories such as:
 
-```text
-datasets/
-```
+* Patient messages or healthcare conversations
+* Appointment or scheduling data
+* Hospital satisfaction or patient experience data
+* EHR-style patient records
+* Specialty or symptom labels
 
-This project expects dataset categories such as:
-
-1. Patient messages or healthcare conversations
-2. Appointment or scheduling data
-3. Hospital satisfaction or patient experience data
-4. EHR-style patient records
-5. Specialty or symptom labels
-
-The cloud deployment does **not** upload full datasets. Instead, the project creates a small processed demo subset:
-
-```text
-cloud_data/processed/mock_ehr.db
-cloud_data/processed/appointment_history.csv
-cloud_data/processed/hospital_satisfaction_metrics.csv
-```
-
-That keeps the Azure ZIP deployment small and stable.
-
----
 
 ## Local Setup
 
