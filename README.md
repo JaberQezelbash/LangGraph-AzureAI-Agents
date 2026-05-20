@@ -162,45 +162,7 @@ needs_human = true
 urgency = emergency
 ```
 
----
 
-## Troubleshooting
-
-| Problem | Cause | Fix |
-|---|---|---|
-| `az` is not recognized | Azure CLI not in PowerShell PATH | Use full `az.cmd` path |
-| Plain app URL does not work | Azure generated a unique hostname | Query `enabledHostNames` |
-| ZIP deploy fails with `EINVAL` | Windows backslash paths inside ZIP | Build ZIP using `codes/scripts/build_posix_zip.py` |
-| `/clinical_agent/api.py` is 404 | Deployment folder structure is wrong | Do not start FastAPI until file checks return 200 |
-| `/health` returns 504 on first boot | Dependencies are installing | Watch logs and wait for Uvicorn startup |
-| `No module named clinical_agent` | Import path issue | Copy package to root and add root/src to `sys.path` |
-| Oryx temp folder misses files | Build output path issue | Disable Oryx and run from `/home/site/wwwroot` |
-
----
-
-## Security Notes
-
-Do not upload:
-
-```text
-.env
-Azure keys
-Kaggle API tokens
-real patient data
-subscription IDs
-tenant IDs
-personal email addresses
-```
-
-For real healthcare deployments, this would require authentication, authorization, audit logging, encryption, human-in-the-loop review, clinical validation, and compliance controls.
-
----
-
-## Resume Bullet
-
-**Clinical Patient-Engagement Multi-Agent System** — Built and deployed a LangGraph-based clinical message triage API on Azure App Service with FastAPI, mock EHR context, safety checks, routing logic, tool-calling behavior, and live Swagger documentation.
-
----
 
 ## Author’s Note
 
