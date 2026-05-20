@@ -6,46 +6,17 @@ This repository contains an end-to-end AI-agent backend project that receives pa
 
 > **Disclaimer:** This project is for education, experimentation, and portfolio demonstration only. It uses mock/synthetic clinical data. It is not a medical device, not clinical decision support, and not intended for real patient care.
 
----
 
-## Live Demo
+
+## The product live demo:
 
 After deployment, the API exposes a Swagger/OpenAPI browser UI:
 
 ```text
-https://<your-app-service-hostname>/docs
+https://app-clinical-langgraph-jaber-5271-afbpbchvfzh5h7ef.eastus2-01.azurewebsites.net/docs#/default/health_check_health_get
 ```
 
-The most important endpoint is:
 
-```text
-POST /run
-```
-
-Example request:
-
-```json
-{
-  "patient_id": "P0000001",
-  "user_message": "I need to schedule a cardiology appointment next week."
-}
-```
-
-Example response fields:
-
-```json
-{
-  "intent": "appointment",
-  "urgency": "routine",
-  "sentiment": "neutral",
-  "specialty": "cardiology",
-  "route": "appointment_agent",
-  "needs_human": false,
-  "final_response": "..."
-}
-```
-
----
 
 ## What I Built
 
