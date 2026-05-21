@@ -45,7 +45,7 @@ It demonstrates:
 - Azure OpenAI / Azure AI configuration through environment variables,
 - and a public Swagger UI for testing.
 
----
+
 
 ## Model / System Stack
 
@@ -59,7 +59,7 @@ It demonstrates:
 | Data layer | Mock EHR SQLite database plus small processed CSV files |
 | Deployment packaging | POSIX-safe ZIP built with Python `zipfile` |
 
----
+
 
 ## Repository Structure
 
@@ -129,7 +129,7 @@ Original datasets are available here. The project expects dataset categories suc
 
 
 
----
+
 
 ## Example API Calls
 
