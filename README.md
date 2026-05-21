@@ -1,4 +1,4 @@
-## Clinical AI Agents with LangGraph Orchestration and Azure Deployment for Patient Triage
+## LangGraph Orchestration AL Agents and Azure Deployment for Patient Triage
 
 
 
