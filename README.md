@@ -1,6 +1,5 @@
-# LangGraph-AzureAI-Agents
+# Clinical AI Agents with LangGraph Orchestration and Azure Deployment
 
-**Clinical Patient-Engagement Multi-Agent System with LangGraph + Azure AI**
 
 
 
