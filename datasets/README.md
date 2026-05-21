@@ -9,6 +9,4 @@ Required dataset categories:
 * Specialty or symptom classification dataset
 
 
-Only this processed subset is packaged into Azure.
-
-**The main reason was that I wanted to make this demo cheaper in terms of token usage for the later steps :)**
+Only a processed subsets of datasets are packaged into Azure. **The main reason was that I wanted to make this demo cheaper in terms of token usage for the later steps :)**
