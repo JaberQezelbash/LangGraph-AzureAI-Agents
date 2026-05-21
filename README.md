@@ -139,13 +139,7 @@ Original datasets are available here. The project expects dataset categories suc
 $body = @{
   patient_id = "P0000001"
   user_message = "I have chest pain and shortness of breath."
-} | ConvertTo-Json
-
-Invoke-RestMethod `
-  -Uri "https://<your-app-hostname>/run" `
-  -Method Post `
-  -ContentType "application/json" `
-  -Body $body
+}
 ```
 
 Expected emergency routing:
