@@ -1,4 +1,4 @@
-## Clinical AI Agents with LangGraph Orchestration and Azure Deployment
+## AI Agents with LangGraph Orchestration and Azure Deployment
 
 
 
