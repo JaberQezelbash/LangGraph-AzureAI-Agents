@@ -105,12 +105,11 @@ It demonstrates:
 │   └── README.md
 │
 ├── assets/
-│   ├── README.md
-│   ├── technical_details.md
-│   └── workflow_diagram.mmd
-│
-└── outputs/
-    └── .gitkeep
+    ├── README.md
+    ├── technical_details.md
+    └── workflow_diagram.mmd
+
+
 ```
 
 The repository is organized in the same portfolio style as my other project repositories: the main source files are under `codes/`, visual and technical explanations are under `assets/`, and the root README provides the high-level story.
