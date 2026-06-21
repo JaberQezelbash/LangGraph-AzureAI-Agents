@@ -17,7 +17,7 @@ This repository contains an end-to-end AI-agent backend project that receives pa
 > ⚠️ Disclaimer: This project is for portfolio demonstration only and is not intended for real patient care or clinical decision support.
 
 
-.
+
 ## The product live demo:
 
 After deployment, the API exposes a Swagger/OpenAPI browser UI:
